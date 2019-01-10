@@ -1,5 +1,5 @@
 /**
- * Class to test a method to convert the text between the tags to uppercase.
+ * Class to test a method to convert the text between the tags to upper case.
  * 
  * @author Ignacio Belmonte 10 ene. 2019
  */
@@ -21,11 +21,11 @@ public class ConvertirAMayusculaSubcadena {
 			if (isContainsOpenAndCloseTag(text)) {
 				finalText = new StringBuilder(); // reset finalText
 
-				// add previus text of the open tag
+				// add previous text of the open tag
 				String textBeforeOpenTag = text.substring(0, searchStartPoint);
 				finalText.append(textBeforeOpenTag);
 
-				// add uppercase text whitout tags
+				// add upper case text without tags
 				String upperCaseText = text.substring(getEndPositionOfOpenTag(), getStartPositionOfCloseTag(text))
 						.toUpperCase();
 				finalText.append(upperCaseText);
