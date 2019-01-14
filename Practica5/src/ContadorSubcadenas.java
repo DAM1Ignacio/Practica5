@@ -14,7 +14,7 @@ public class ContadorSubcadenas {
 
 	public static int obtenerNumeroVecesSubCadena(String text, String subcadenaABuscar) {
 		int numSubcadenasEncontradas = 0;
-		StringBuffer textoAIndexar = new StringBuffer(text);
+		StringBuilder textoAIndexar = new StringBuilder(text);
 		int punteroEnLaCadena = 0;
 		while (true) {
 			punteroEnLaCadena = textoAIndexar.indexOf(subcadenaABuscar, punteroEnLaCadena + 1);
